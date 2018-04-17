@@ -1,0 +1,12 @@
+[
+	{
+		"model": "default.contenttemplates", "pk": 1, 
+		"fields": {"template_name": "index", "slug": "index", "content": "<h1>Content from Index</h1>", "created_on": "2014-09-30T05:57:10Z", "author": "Anand"}
+	
+	}, 
+
+	{
+		"model": "default.contenttemplates", "pk": 2, 
+		"fields": {"template_name": "aboutus", "slug": "about", "content": "<h1> About Us Content </h1>", "created_on": "2014-09-30T05:57:10Z", "author": "Anand"}
+	}
+]
