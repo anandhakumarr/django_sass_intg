@@ -4,14 +4,14 @@
 <div class="skew-overflowHidden">
         {{home_content | safe}}
 </div>        
-{% include "footer.html" %}
+
 	
 <!DOCTYPE html>
 <html>
 <head>
 	<title>{{ template_data.template_name|title  }}</title>
 </head>
-<body>
+<!-- <body>
 <h1> Slug </h1>
 {{ template_data.slug }}
 <h1> Content </h1>
@@ -20,12 +20,12 @@
 {{ template_data.author }}
 <h1> Created At </h1>
 {{ template_data.created_on }}
-</body>
+</body> -->
 </html>
 
 
     <!-- About -->
-    <section class="content-section bg-light" id="about">
+    <!-- <section class="content-section bg-light" id="about">
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-10 mx-auto">
@@ -36,7 +36,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Services -->
     <section class="content-section bg-primary text-white text-center" id="services">
@@ -47,42 +47,26 @@
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-screen-smartphone"></i>
-            </span>
             <h4>
-              <strong>Responsive</strong>
+              <strong>Slug</strong>
             </h4>
-            <p class="text-faded mb-0">Looks great on any screen size!</p>
           </div>
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-pencil"></i>
-            </span>
             <h4>
-              <strong>Redesigned</strong>
+              <strong>Content</strong>
             </h4>
-            <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
           </div>
           <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-like"></i>
-            </span>
             <h4>
-              <strong>Favorited</strong>
+              <strong>Author</strong>
             </h4>
-            <p class="text-faded mb-0">Millions of users
-              <i class="fa fa-heart"></i>
-              Start Bootstrap!</p>
+           
           </div>
           <div class="col-lg-3 col-md-6">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-mustache"></i>
-            </span>
             <h4>
-              <strong>Question</strong>
+              <strong>Created At</strong>
             </h4>
-            <p class="text-faded mb-0">I mustache you a question...</p>
+      
           </div>
         </div>
       </div>
@@ -101,10 +85,10 @@
     <!-- Portfolio -->
     <section class="content-section" id="portfolio">
       <div class="container">
-        <div class="content-section-heading text-center">
+       <!--  <div class="content-section-heading text-center">
           <h3 class="text-secondary mb-0">Portfolio</h3>
           <h2 class="mb-5">Recent Projects</h2>
-        </div>
+        </div> -->
         <div class="row no-gutters">
           <div class="col-lg-6">
             <a class="portfolio-item" href="#">
@@ -155,13 +139,13 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="content-section bg-primary text-white">
+   <!--  <section class="content-section bg-primary text-white">
       <div class="container text-center">
         <h2 class="mb-4">The buttons below are impossible to resist...</h2>
         <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
         <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
       </div>
-    </section>
+    </section> -->
 
     <!-- Map -->
     <section id="contact" class="map">
@@ -171,3 +155,4 @@
         <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
       </small>
     </section>
+  {% include "footer.html" %}  
