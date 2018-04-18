@@ -1,44 +1,19 @@
 {% include "header.html" %}
-{% load staticfiles %}
-{% block title %}<title>Home</title>{% endblock title %}
-<div class="skew-overflowHidden">
-        {{home_content | safe}}
-</div>        
+{% block title %}<title>{{ template_data.template_name|title  }}</title>{% endblock title %}
 
-	
-<!DOCTYPE html>
-<html>
-<head>
-	<title>{{ template_data.template_name|title  }}</title>
-</head>
-<!-- <body>
-<h1> Slug </h1>
-{{ template_data.slug }}
-<h1> Content </h1>
-{{ template_data.content|safe }}
-<h1> Author </h1>
-{{ template_data.author }}
-<h1> Created At </h1>
-{{ template_data.created_on }}
-</body> -->
-</html>
-
-
-    <!-- About -->
-    <!-- <section class="content-section bg-light" id="about">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-            <p class="lead mb-5">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
-              <a href="https://unsplash.com/">Unsplash</a>!</p>
-            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
-          </div>
-        </div>
+    <!-- Header -->
+    <header class="masthead d-flex">
+      <div class="container text-center my-auto">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1 class="mb-1">{{ template_data.template_name|title  }}</h1>
+        <h3 class="mb-5">
+          <em>{{home_content | safe}} Template</em>
+        </h3>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
       </div>
-    </section> -->
+      <div class="overlay"></div>
+    </header>
 
-    <!-- Services -->
     <section class="content-section bg-primary text-white text-center" id="services">
       <div class="container">
         <div class="content-section-heading">
@@ -49,24 +24,27 @@
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
             <h4>
               <strong>Slug</strong>
+              <p>{{ template_data.slug }}</p>
             </h4>
           </div>
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
             <h4>
               <strong>Content</strong>
             </h4>
+            <p>{{home_content | safe}}</p>
           </div>
           <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
             <h4>
               <strong>Author</strong>
             </h4>
+            <p>{{ template_data.author }}</p>
            
           </div>
           <div class="col-lg-3 col-md-6">
             <h4>
               <strong>Created At</strong>
             </h4>
-      
+            <p>{{ template_data.created_on }}</p>
           </div>
         </div>
       </div>
@@ -82,70 +60,6 @@
       </div>
     </section>
 
-    <!-- Portfolio -->
-    <section class="content-section" id="portfolio">
-      <div class="container">
-       <!--  <div class="content-section-heading text-center">
-          <h3 class="text-secondary mb-0">Portfolio</h3>
-          <h2 class="mb-5">Recent Projects</h2>
-        </div> -->
-        <div class="row no-gutters">
-          <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Stationary</h2>
-                  <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Ice Cream</h2>
-                  <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Strawberries</h2>
-                  <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Workspace</h2>
-                  <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to Action -->
-   <!--  <section class="content-section bg-primary text-white">
-      <div class="container text-center">
-        <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-        <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
-        <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
-      </div>
-    </section> -->
 
     <!-- Map -->
     <section id="contact" class="map">
